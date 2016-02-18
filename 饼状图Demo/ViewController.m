@@ -7,21 +7,43 @@
 //
 
 #import "ViewController.h"
+#import "CustumView.h"
+
 
 @interface ViewController ()
+@property(nonatomic,weak)CustumView *vView;
+@property(nonatomic,strong)NSCache *cache;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self custumViewTest];
+    _cache = [[NSCache alloc] init];
+    [_cache setObject:@"hehh" forKey:@"hehe"];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)custumViewTest
+{
+    NSArray *dataSource = @[@20,@30,@10,@30,@10];
+    CustumView *cView = [[CustumView alloc] initWithFrame:CGRectMake(0, 100, 400, 350)];
+//    cView.backgroundColor = [UIColor redColor];
+    cView.dataArray = dataSource;
+    _vView = cView;
+    [self.view addSubview:cView];
+    
 }
+
+- (IBAction)btnClicked:(id)sender
+{
+    [_vView setNeedsDisplayInRect:CGRectMake(0, 0, 30, 30)];
+    NSLog(@"str:%@",[_cache objectForKey:@"hehe"]);
+}
+
+
 
 @end

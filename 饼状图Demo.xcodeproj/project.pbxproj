@@ -15,6 +15,7 @@
 		08DB1C3C1C05427D007268B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DB1C3A1C05427D007268B4 /* LaunchScreen.storyboard */; };
 		08DB1C471C05427D007268B4 /* ___DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB1C461C05427D007268B4 /* ___DemoTests.m */; };
 		08DB1C521C05427D007268B4 /* ___DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB1C511C05427D007268B4 /* ___DemoUITests.m */; };
+		08DB1C611C0542A0007268B4 /* CustumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DB1C601C0542A0007268B4 /* CustumView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		08DB1C4D1C05427D007268B4 /* 饼状图DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "饼状图DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DB1C511C05427D007268B4 /* ___DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___DemoUITests.m"; sourceTree = "<group>"; };
 		08DB1C531C05427D007268B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08DB1C5F1C0542A0007268B4 /* CustumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustumView.h; sourceTree = "<group>"; };
+		08DB1C601C0542A0007268B4 /* CustumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustumView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				08DB1C301C05427D007268B4 /* AppDelegate.m */,
 				08DB1C321C05427D007268B4 /* ViewController.h */,
 				08DB1C331C05427D007268B4 /* ViewController.m */,
+				08DB1C5F1C0542A0007268B4 /* CustumView.h */,
+				08DB1C601C0542A0007268B4 /* CustumView.m */,
 				08DB1C351C05427D007268B4 /* Main.storyboard */,
 				08DB1C381C05427D007268B4 /* Assets.xcassets */,
 				08DB1C3A1C05427D007268B4 /* LaunchScreen.storyboard */,
@@ -276,6 +281,7 @@
 				08DB1C341C05427D007268B4 /* ViewController.m in Sources */,
 				08DB1C311C05427D007268B4 /* AppDelegate.m in Sources */,
 				08DB1C2E1C05427D007268B4 /* main.m in Sources */,
+				08DB1C611C0542A0007268B4 /* CustumView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "饼状图Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "j.t.d.---Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "饼状图Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "j.t.d.---Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
